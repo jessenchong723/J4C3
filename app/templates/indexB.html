@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 align="center">JavaScript For Loop</h2>
+
+
+<script>
+
+function limit(a) {
+
+const cars = ["Lexus", "BMW", "Volvo", "Saab", "Ford","Bentley", "Proton", "BYD", "TESLA", "Nissan", "Mercedes", "Audi", "Fiat", "Mazda", "Rolls-Royce"];
+
+let i = 0;
+let len = a;
+let text = "";
+
+
+for (; i < len; ) {
+  text += cars[i] + "<br>";
+  i++;
+}
+
+
+document.getElementById("demo").innerHTML = text;
+
+}
+</script>
+
+<center>
+  <button type="button" onclick="limit(6)">6</button>
+  <button type="button" onclick="limit(5)">5</button>
+  <button type="button" onclick="limit(12)">12</button>
+  <button type="button" onclick="limit(8)">8</button>
+  <button type="button" onclick="limit(3)">3</button>
+  <button type="button" onclick="limit(0)">Clear</button>
+
+</center>
+
+<table border="1" align="center" width="200">
+<tr align="center">
+<td><p id="demo"></p></td>
+</tr>    
+</table>
+</body>
+</html>
